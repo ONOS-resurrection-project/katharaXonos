@@ -27,14 +27,17 @@ You can run the container in interactive mode:
 Run the following command to build the image from scratch:
 
 ```bash
-# if you haven't cloned the repo yet
-git clone https://github.com/bhuiyan-chafi/onos-classic.git
+# get the onos-classic
+git clone https://github.com/ONOS-resurrection-project/onos-classic.git
 
-# From the repository root:
-docker build -t kathara/onos-classic docs/katharaXonos --no-cache
+# navigate to onos-classic/docs directory
+cd onos-classic/docs/
 
-# Alternatively, from the docs/katharaXonos/ directory:
-cd docs/katharaXonos
+# clone this repository
+git clone https://github.com/ONOS-resurrection-project/katharaXonos.git
+
+# from the katharaXonos directory:
+cd katharaXonos/
 docker build -t kathara/onos-classic . --no-cache
 ```
 
@@ -129,6 +132,6 @@ Open your web browser and navigate to:
 
 ### 7. Lab Example
 
-Please follow this [tutorial](https://github.com/bhuiyan-chafi/sdn-docker/blob/main/kathara/katharaXonos/README.md) for the LAB.
+Please follow this [lab-tutorial](./labs/ovs/README.md) for the LAB.
 
 ---
